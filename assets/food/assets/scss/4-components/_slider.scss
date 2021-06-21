@@ -1,0 +1,159 @@
+/*----------------------------------------*/
+/*    19 - Components - Slider
+/*----------------------------------------*/
+.home-wrapper{
+    .slider-content{
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        left: 0;
+        right: 0;
+        margin: 0 auto;
+        max-width: 1480px;
+        padding: 0 15px;
+        @include breakpoint(max-xxl_device){
+            max-width: 1320px;
+        }
+        @include breakpoint(max-xl_device){
+            max-width: 1140px;
+        }
+        @include breakpoint(max-lg_device){
+            max-width: 960px;
+        }
+        @include breakpoint(max-md_device){
+            max-width: 720px;
+        }
+        @include breakpoint(max-sm_device){
+            max-width: 540px;
+        }
+        .slider-small-title{
+            font-weight: 400;
+            font-size: 36px;
+            margin-bottom: 10px;
+            @include breakpoint(max-md_device){
+                font-size: 32px;
+            }
+            @include breakpoint(max-sm_device){
+                font-size: 28px;
+            }
+            @include breakpoint(max-xs_device){
+                font-size: 26px;
+            }
+            @include breakpoint(max-xxs_device){
+                font-size: 22px;
+            } 
+        }
+        .slider-large-title{
+            font-size: 72px;
+            font-weight: 600;
+            margin-bottom: 20px;
+            @include breakpoint(max-md_device){
+                font-size: 62px;
+            }
+            @include breakpoint(max-sm_device){
+                font-size: 52px;
+            }
+            @include breakpoint(max-xs_device){
+                font-size: 42px;
+            }
+            @include breakpoint(max-xxs_device){
+                font-size: 32px;
+            }
+        }
+    }
+}
+/*-- Slick Animation --*/
+.slick-active {
+    &.animation-style-01 {
+        .slider-content{
+            .slider-small-title{
+                animation-name: bounceIn;
+                animation-delay: 1s;
+                animation-duration: .9s;
+                animation-fill-mode: both;
+            }
+            .slider-large-title{
+                animation-name: fadeInUp;
+                animation-delay: .7s;
+                animation-duration: .9s;
+                animation-fill-mode: both;
+            }
+            a {
+                animation-name: fadeInUp;
+                animation-delay: .7s;
+                animation-duration: .9s;
+                animation-fill-mode: both;
+            }
+        }
+    }
+} 
+/*-- Home Background image --*/
+.bg-position{
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: cover;
+}
+.slide-bg-1{
+    min-height: 800px;
+    @include breakpoint(max-xxl_device){
+        min-height: 700px;
+    }
+    @include breakpoint(max-xl_device){
+        min-height: 600px;
+    }
+    @include breakpoint(max-lg_device){
+        min-height: 550px;
+    }
+    @include breakpoint(max-md_device){
+        min-height: 500px;
+    }
+    @include breakpoint(max-sm_device){
+        min-height: 400px;
+    }
+    @include breakpoint(max-xs_device){
+        min-height: 350px;
+    }
+    @include breakpoint(max-xxs_device){
+        min-height: 300px;
+    }
+}
+.slide-bg-2{
+    min-height: 850px;
+    @include breakpoint(max-xxl_device){
+        min-height: 750px;
+    }
+    @include breakpoint(max-xl_device){
+        min-height: 600px;
+    }
+    @include breakpoint(max-lg_device){
+        min-height: 550px;
+    }
+    @include breakpoint(max-md_device){
+        min-height: 500px;
+    }
+    @include breakpoint(max-sm_device){
+        min-height: 400px;
+    }
+    @include breakpoint(max-xs_device){
+        min-height: 350px;
+    }
+    @include breakpoint(max-xxs_device){
+        min-height: 300px;
+    }
+}
+.slide-1{
+    background-image: url('../images/slider/1-1.jpg');
+	background-color: rgba(215, 177, 190, 0.9);
+}
+.slide-2{
+    background-image: url('../images/slider/1-2.jpg');
+	background-color: rgba(215, 177, 190, 0.9);
+}
+.slide-3{
+    background-image: url('../images/slider/2-1.jpg');
+	background-color: rgba(215, 177, 190, 0.9);
+}
+.slide-4{
+    background-image: url('../images/slider/2-2.jpg');
+	background-color: rgba(215, 177, 190, 0.9);
+}

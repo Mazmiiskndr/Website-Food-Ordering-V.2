@@ -1,0 +1,89 @@
+/*----------------------------------------*/
+/*    05 - Layout - Footer
+/*----------------------------------------*/
+.footer-area{
+    .footer-widget-area{
+        padding: 100px 0;
+        background-color: $default-color;
+        @include breakpoint(max-md_device){
+            padding: 60px 0px 50px 0;
+        }
+        @include breakpoint(max-sm_device){
+            padding: 60px 0px 37px 0;
+        }
+    }
+    .single-footer-widget{
+        @include breakpoint(max-md_device){
+            margin-top: 38px;
+        }
+        .footer-logo{
+            margin-bottom: 18px;
+        }
+        .desc-content{
+            margin-bottom: 23px;
+            color: $footer-color;
+        }
+        .social-links{
+            ul{
+                li{
+                    a{
+                        width: 30px;
+                        height: 30px;
+                        line-height: 30px;
+                        text-align: center;
+                        margin-right: 5px;
+                        color: $footer-color;
+                        border-color: $footer-color;
+                        &:hover{
+                            color: $primary-color !important;
+                            border-color: $primary-color !important;
+                        }
+                    }
+                }
+            }
+        }
+        .widget-title{
+            color: $footer-color;
+            text-decoration: underline;
+            font-weight: 500;
+            font-size: 22px;
+            margin-top: -1px;
+            margin-bottom: 22px;
+            line-height: 1;
+        }
+        .widget-list{
+            color: $footer-color;
+            list-style: none;
+            li{
+                line-height: 2;
+                a{
+                    font-weight: 300;
+                    &:hover{
+                        margin-left: 5px;
+                        color: $primary-color;
+                    }
+                }
+            }
+        }
+        .widget-body{
+            address{
+                line-height: 2;
+                color: $footer-color;
+                font-weight: 300;
+            }
+        }
+    }
+    .footer-copyright-area{
+        background-color: $black-color;
+        padding: 20px 0px;
+        .copyright-content{
+            color: $footer-color;
+            a{
+                color: $primary-color;
+                &:hover{
+                    color: $footer-color;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,83 @@
+/*----------------------------------------*/
+/*    27 - Components - Modal
+/*----------------------------------------*/
+.obrien-modal{
+    .modal-dialog{
+        max-width: 1000px;
+        .modal-content{
+            .close-button{
+                position: absolute;
+                right: 15px;
+                top: 5px;
+                z-index: 99;
+                opacity: 1;
+                color: $default-color;
+                .close-icon{
+                    font-size: 25px;
+                }
+                &:hover{
+                    color: $primary-color;
+                }
+            }
+            .modal-body{
+                padding-top: 30px;
+                padding-bottom: 30px;
+            }
+        }
+    }
+}
+.modal-product{
+    @include breakpoint(max-sm_device){
+        margin-top: 40px;
+    }
+    .product-title{
+        .title{
+            font-size: 20px;
+            margin-bottom: 15px;
+        }
+    }
+    .product-rating{
+        i{
+            font-size: 18px;
+            color: $primary-color;
+            margin-top: 15px;
+        }
+    }
+    .desc-content{
+        margin-top: 30px;
+    }
+    .nice-select{
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        border-radius: 0;
+        margin-top: 30px;
+        .option{
+            min-height: 25px;
+            line-height: 25px;
+        }
+        .list{
+            width: 100%;
+            box-shadow: none;
+            border-left: 1px solid $border-color-2;
+            border-right: 1px solid $border-color-2;
+            border-bottom: 1px solid $border-color-2;
+            margin-top: 2px;
+            border-radius: 0px;
+        }
+        &:focus{
+            border: 2px solid #666;
+            outline: none;
+            box-shadow: none;
+        }
+    }
+    .quantity-with_btn{
+        margin-top: 40px;
+        @include breakpoint(max-xxs_device){
+            flex-direction: column;
+            .add-to_cart{
+                margin-top: 20px;
+            }
+        }
+    }
+}

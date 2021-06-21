@@ -1,0 +1,174 @@
+/*----------------------------------------*/
+/*    06 - Pages - Blog
+/*----------------------------------------*/
+.home-1{
+    .latest-blog-area{
+        margin-top: 74px;
+        @include breakpoint(max-xxs_device){
+            margin-top: 54px;
+        }
+    }
+}
+.latest-blog-area{
+    .slick-list{
+        margin: 0 -15px;
+    }
+    .single-blog{
+        padding: 0 15px;
+    }
+    .section-content{
+        margin-bottom: 56px;
+        @include breakpoint(max-xxs_device){
+            margin-bottom: 40px;
+        }
+        .title-1{
+            margin-bottom: 20px;
+        }
+    }
+}
+.single-blog{
+    .single-blog-thumb{
+        a{
+            width: 100%;
+            display: block;
+            overflow: hidden;
+            img{
+                width: 100%;
+            }
+        }
+    }
+    .single-blog-content{
+        padding: 25px 0 0 70px;
+        @include breakpoint(max-xxs_device){
+            padding: 25px 0 0 55px;
+        }
+        .post-date{
+            width: 50px;
+            left: 0px;
+            top: 25px;
+            padding: 10px;
+            @include breakpoint(max-xxs_device){
+                width: 40px;
+            }
+            span{
+                font-family: $general-font-family-name;
+                font-weight: 600;
+                font-size: 20px;
+                line-height: 1;
+                color: $default-color;
+                &:first-child{
+                    padding-bottom: 5px;
+                }
+            }
+        }
+        .post-meta{
+            margin-bottom: 10px;
+            margin-top: -4px;
+            span{
+                font-family: $general-font-family-name;
+                color: $default-color;
+            }
+        }
+        .post-title{
+            font-size: 20px;
+            font-weight: 500;
+            margin-top: -5px;
+            margin-bottom: 10px;
+            color: $default-color;
+        }
+    }
+}
+/*-- Blog Details Area Scss --*/
+.blog-post-details{
+    .blog-post-wrapper{
+        .blockquote{
+            background-color: $blockquote-bg;
+            color: $default-color;
+            font-size: 18px;
+            padding: 42px 44px 80px;
+            position: relative;
+            font-style: italic;
+            border-left: 1px solid $border-color-4;
+            @include breakpoint(max-xxs_device){
+                font-size: 14px;
+                padding: 32px 34px 60px;
+            }
+            &:before{
+                content: '\f10e';
+                font-family: "FontAwesome";
+                position: absolute;
+                right: 40px;
+                bottom: 40px;
+            }
+        }
+        .share-article{
+            text-align: center;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            .left-side{
+                float: left;
+            }
+            .right-side{
+                float: right;
+            }
+            h6{
+                @include breakpoint(max-xxs_device){
+                    display: none;
+                }
+            }
+        }
+        .social-share{
+            display: flex;
+            justify-content: center;
+            border-top: 1px solid $border-color-4;
+            margin-top: 10px;
+            padding-top: 10px;
+            a{
+                &:first-child{
+                    i{
+                        margin-left: 0;
+                    }
+                }
+            }
+        }
+        .comment-area-wrapper{
+            .single-comment-wrap{
+                &.comment-reply{
+                    padding-left: 50px;
+                    @include breakpoint(max-xxs_device){
+                        padding-left: 20px;
+                    }
+                }
+                .author-thumb{
+                    a{
+                        width: 70px;
+                        height: 70px;
+                        margin-right: 10px;
+                        img{
+                            width: 100%;
+                        }
+                        @include breakpoint(max-xxs_device){
+                            width: 50px;
+                            height: 50px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+.comment-box{
+    .input-area{
+        padding: 10px;
+        &:focus{
+            border: 1px solid $primary-color !important;
+        }
+    }
+    .obrien-button{
+        margin-bottom: 80px;
+        @include breakpoint(max-md_device){
+            margin-bottom: 0;
+        }
+    }
+}

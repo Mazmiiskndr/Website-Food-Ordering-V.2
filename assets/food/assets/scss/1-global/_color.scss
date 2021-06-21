@@ -1,0 +1,67 @@
+/*----------------------------------------*/
+/*    03 - Global - Color
+/*----------------------------------------*/
+.red{
+    background: red no-repeat center;
+    background-size: initial;
+}
+.green{
+    background: green no-repeat center;
+    background-size: initial;
+}
+.blue{
+    background: blue no-repeat center;
+    background-size: initial;
+}
+.yellow{
+    background: yellow no-repeat center;
+    background-size: initial;
+}
+.white{
+    background: white no-repeat center;
+    background-size: initial;
+}
+.gold{
+    background: gold no-repeat center;
+    background-size: initial;
+}
+.gray{
+    background: gray no-repeat center;
+    background-size: initial;
+}
+.magenta{
+    background: magenta no-repeat center;
+    background-size: initial;
+}
+.maroon{
+    background: maroon no-repeat center;
+    background-size: initial;
+}
+.navy{
+    background: navy no-repeat center;
+    background-size: initial;
+}
+.facebook-color{
+    color: $facebook;
+    &:hover{
+        color: $primary-color;
+    }
+}
+.twitter-color{
+    color: $twitter;
+    &:hover{
+        color: $primary-color;
+    }
+}
+.linkedin-color{
+    color: $linkedin;
+    &:hover{
+        color: $primary-color;
+    }
+}
+.pinterest-color{
+    color: $pinterest;
+    &:hover{
+        color: $primary-color;
+    }
+}

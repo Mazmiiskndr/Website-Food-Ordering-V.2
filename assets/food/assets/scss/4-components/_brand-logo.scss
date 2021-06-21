@@ -1,0 +1,17 @@
+/*----------------------------------------*/
+/*    26 - Components - Brand-logo
+/*----------------------------------------*/
+.brand-logo-area{
+    .brand-logo-item{
+        text-align: center;
+        display: table !important;
+        height: 85px;
+        a{
+            display: table-cell;
+            vertical-align: middle;
+            img{
+                margin: auto;
+            }
+        }
+    }
+}

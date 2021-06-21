@@ -1,0 +1,93 @@
+/*----------------------------------------*/
+/*    11 - Pages - Compare
+/*----------------------------------------*/
+/*------ Start Compare Page Wrapper -----*/
+.compare-table{
+    .table{
+        tbody{
+            tr{
+                border-color: $border-color-3;
+                td{
+                    text-align: center;
+                    padding: 20px;
+                    vertical-align: middle;
+                    border-color: $border-color-3;
+                    @include breakpoint(max-sm_device){
+                        padding: 10px;
+                    }
+                    &.first-column{
+                        width: 175px;
+                        font-size: 15px;
+                        font-weight: 600;
+                        color: $default-color;
+                        margin: 0;
+                        @include breakpoint(max-sm_device){
+                            width: 60px;
+                        }
+                    }
+                    &.product-image-title{
+                        width: 410px;
+                        vertical-align: middle;
+                        @include breakpoint(max-sm_device){
+                            width: 160px;
+                        }
+                        .image{
+                            clear: both;
+                            width: 100%;
+                            margin-bottom: 15px;
+                            display: block;
+                        }
+                        .category{
+                            float: left;
+                            clear: both;
+                            color: $primary-color;
+                            text-transform: capitalize;
+                            letter-spacing: 0.5px;
+                            @include breakpoint(max-md_device){
+                                float: none;
+                            }
+                        }
+                        .title{
+                            float: left;
+                            clear: both;
+                            font-size: 16px;
+                            color: $default-color;
+                            font-weight: 500;
+                            text-transform: capitalize;
+                            &:hover{
+                                color: $primary-color;
+                            }
+                        }
+                    }
+                    &.pro-desc{
+                        p{
+                            text-align: left;
+                            margin: 0;
+                        }
+                    }
+                    &.pro-price, &.pro-color, &.pro-stock{
+                        font-size: 14px;
+                        font-weight: 400;
+                    }
+                    &.pro-remove{
+                        button{
+                            border: none;
+                            background-color: transparent;
+                            padding: 0;
+                            cursor: pointer;
+                            transition: 0.4s;
+                            i{
+                                font-size: 20px;
+                            }
+                            &:hover{
+                                color: $primary-color;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+/*------ end Compare Page Wrapper -----*/

@@ -1,0 +1,63 @@
+/*----------------------------------------*/
+/*    14 - Pages - Wishlist
+/*----------------------------------------*/
+/*--------- Wishlist Page Wrapper Start ---------*/
+.wishlist-table{
+    .table {
+        margin: 0;
+        white-space: nowrap;
+        thead {
+            tr{
+                th {
+                    border-color: $border-color-3;
+                    border-bottom: 0 solid transparent;
+                    color: $default-color;
+                    font-size: 15px;
+                    font-weight: 700;
+                    padding: 15px 20px;
+                    text-align: center;
+                }
+            }
+        }
+        tr{
+            border-color: $border-color-3;
+            .pro-thumbnail, .pro-price, .pro-quantity, .pro-subtotal, .pro-remove{
+                width: 177px;
+                text-align: center;
+                align-items: center;
+            }
+        }
+        tbody{
+            td {
+                border-color: #ccc;
+                text-align: center;
+                padding: 10px 20px;
+                vertical-align: middle;
+                font-weight: 600;
+                color: #333333;
+                a {
+                    color: #333333;
+                    font-weight: 500;
+                    text-transform: capitalize;
+                    &:hover{
+                        color: $primary-color;
+                    }
+                    &.btn{
+                        color: $white-color;
+                    }
+                    &.check-btn{
+                        color: $white-color;
+                    }
+                }
+                &.pro-remove{
+                    a{
+                        i{
+                            font-size: 24px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+/*--------- Wishlist Page Wrapper end ---------*/

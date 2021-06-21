@@ -1,0 +1,108 @@
+/*----------------------------------------*/
+/*    00 - Base - Mixins
+/*----------------------------------------*/
+// Breakpoints
+@mixin breakpoint($point) {
+	// Fixed Device
+	@if $point == xl-device {
+		@media only screen and (min-width: 1200px) and (max-width: 1500px) {
+			@content;
+        }
+        // For Desktop Device
+	}
+	@if $point == lg-device {
+		@media only screen and (min-width: 992px) and (max-width: 1199px) {
+			@content;
+        }
+        // For Normal Device
+	}
+	@if $point == md-device {
+		@media only screen and (min-width: 768px) and (max-width: 991px) {
+			@content;
+        }
+        // For Tablet Device
+	}
+	@if $point == sm-device {
+		@media only screen and (min-width: 576px) and (max-width: 767px) {
+			@content;
+        }
+        // For Large Mobile Device
+	}
+	@if $point == xs-device {
+		@media only screen and (min-width: 480px) and (max-width: 575px) {
+			@content;
+        }
+        // For Small Mobile Device
+	}
+	@if $point == xxs-device {
+		@media (max-width: 479px) {
+			@content;
+        }
+        // For Extra Small Mobile Device
+	}
+	//  Max Device
+	@if $point == max-xxl_device {
+		@media (max-width: 1800px) {
+			@content;
+		}
+	}
+	@if $point == max-xl_device {
+		@media (max-width: 1500px) {
+			@content;
+		}
+	}
+	@if $point == max-lg_device {
+		@media (max-width: 1199px) {
+			@content;
+		}
+	}
+	@if $point == max-md_device {
+		@media (max-width: 991px) {
+			@content;
+		}
+	}
+	@if $point == max-sm_device {
+		@media (max-width: 767px) {
+			@content;
+		}
+	}
+	@if $point == max-xs_device {
+		@media (max-width: 575px) {
+			@content;
+		}
+	}
+	@if $point == max-xxs_device {
+		@media (max-width: 479px) {
+			@content;
+		}
+    }
+    //  Minimum Device
+	@if $point == min-xxl_device {
+		@media (min-width: 1501px) {
+			@content;
+		}
+	}
+	@if $point == min-xl_device {
+		@media (min-width: 1200px) {
+			@content;
+		}
+	}
+	@if $point == min-lg_device {
+		@media (min-width: 992px) {
+			@content;
+		}
+	}
+	@if $point == min-md_device {
+		@media (min-width: 768px) {
+			@content;
+		}
+	}
+}
+$desktop-device-2: "only screen and (min-width: 1199px) and (max-width: 1300px)";
+// Absolute center
+@mixin absCenter {
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+}

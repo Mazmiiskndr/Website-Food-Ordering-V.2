@@ -1,0 +1,33 @@
+/*----------------------------------------*/
+/*    17 - Pages - Login-Register
+/*----------------------------------------*/
+.login-register-wrapper{
+    background: $bg-color-2 none repeat scroll 0 0;
+    padding: 37px 40px;
+    text-align: left;
+    overflow: hidden;
+    @include breakpoint(max-xxs_device){
+        padding: 25px 10px;
+    }
+    .title-4{
+        font-weight: 600;
+    }
+    .single-input-item{
+        input{
+            background: #ffffff none repeat scroll 0 0;
+            border: medium none rgba(0, 0, 0, 0);
+            border-radius: 0;
+            box-shadow: none;
+            color: $default-color;
+            font-size: 14px;
+            height: 40px;
+            margin-bottom: 20px;
+            padding-left: 10px;
+            padding-right: 10px;
+            width: 100%;
+            &:focus{
+                border: 1px solid $primary-color;
+            }
+        }
+    }
+}

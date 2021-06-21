@@ -1,0 +1,75 @@
+/*----------------------------------------*/
+/*    25 - Components - Action-plan
+/*----------------------------------------*/
+.home-2{
+    .call-to-action-area{
+        padding: 80px 0 76px 0px;
+        @include breakpoint(max-sm_device){
+            padding: 77px 0 74px 0px;
+        }
+        @include breakpoint(max-xxs_device){
+            padding: 60px 0 56px 0px;
+        }
+    }
+}
+.call-to-action-area{
+    .call-to-action-item{
+        padding-right: 30px;
+        margin-right: 30px;
+        position: relative;
+        @include breakpoint(max-md_device){
+            margin-right: 0;
+            padding-right: 10px;
+        }
+        @include breakpoint(max-sm_device){
+            text-align: center;
+            padding-right: 0;
+            margin-top: 25px;
+            display: block;
+        }
+        .call-to-action-icon{
+            margin-right: 30px;
+            flex-basis: 45px;
+            max-width: 45px;
+            @include breakpoint(max-md_device){
+                max-width: 100%;
+                margin-right: 0;
+                margin-bottom: 15px;
+            }
+        }
+        .call-to-action-info{
+            flex-basis: calc(100% - 75px);
+            max-width: calc(100% - 75px);
+            @include breakpoint(max-md_device){
+                max-width: 100%;
+            }
+            @include breakpoint(max-sm_device){
+                max-width: 70%;
+                margin: 0 auto;
+            }
+            .action-title{
+                font-weight: 500;
+                font-size: 22px;
+                line-height: 1;
+                margin-top: -3px;
+                margin-bottom: 10px;
+            }
+        }
+        &:after{
+            background-color: $border-color-2;
+            position: absolute;
+            content: "";
+            right: -10px;
+            top: 50%;
+            transform: translateY(-50%);
+            height: 50px;
+            width: 1px;
+            @include breakpoint(max-md_device){
+                display: none;
+            }
+        }
+    }
+    [class*="col-"]:last-child .call-to-action-item:after {
+        display: none;
+    }
+}

@@ -1,0 +1,71 @@
+/*----------------------------------------*/
+/*    22 - Components - Banner
+/*----------------------------------------*/
+.home-1{
+    .banner-fullwidth-area{
+        margin: 80px 0 80px 0;
+        @include breakpoint(max-xxs_device){
+            margin: 60px 0 60px 0;
+        }
+    }
+    .banner-area{
+        margin-bottom: 74px;
+        @include breakpoint(max-xxs_device){
+            margin-bottom: 54px;
+        }
+    }
+}
+.banner-fullwidth-area{
+    background-color: $white-smoke-color-2;
+    padding: 80px 0;
+    @include breakpoint(max-lg_device){
+        padding: 60px 0px;
+    }
+    @include breakpoint(max-lg_device){
+        padding: 40px 0px 60px 0;
+    }
+    .banner-flash-content{
+        @include breakpoint(max-sm_device){
+            margin-top: 20px;
+        }
+        .deal-head{
+            font-size: 40px;
+            margin-bottom: 15px;
+            @include breakpoint(max-xxs_device){
+                font-size: 32px;
+            }
+        }
+        .deal-title{
+            font-size: 32px;
+            margin-bottom: 35px;
+            font-weight: 600;
+            @include breakpoint(max-lg_device){
+                font-size: 30px;
+            }
+            @include breakpoint(max-md_device){
+                margin-bottom: 28px;
+                font-size: 26px;
+            }
+            @include breakpoint(max-sm_device){
+                margin-bottom: 25px;
+                font-size: 22px;
+            }
+            @include breakpoint(max-xxs_device){
+                font-size: 18px;
+            }
+        }
+        .obrien-button{
+            margin-bottom: 45px;
+            @include breakpoint(max-xxs_device){
+                margin-bottom: 30px;
+            }
+        }
+    }
+}
+.banner-area{
+    .banner-image{
+        @include breakpoint(max-sm_device){
+            margin-bottom: 30px;
+        }
+    }
+}

@@ -1,0 +1,56 @@
+/*----------------------------------------*/
+/*    28 - Components - Breadcrumb
+/*----------------------------------------*/
+.breadcrumbs-area{
+    padding: 100px 0;
+    background: #f6f6f6 url(../images/bg/1-1.jpg) no-repeat scroll center center / cover;
+    &:before{
+        background: $white-color none repeat scroll 0 0;
+        opacity: .3;
+        content: "";
+        height: 100%;
+        left: 0;
+        top: 0;
+        transition: .3s;
+        width: 100%;
+        position: absolute;
+    }
+    .breadcrumb-content{
+        ul{
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            margin-top: 20px;
+            li{
+                color: $default-color;
+                position: relative;
+                a{
+                    font-size: 18px;
+                    color: $default-color;
+                    font-family: $general-font-family-name;
+                    font-weight: 400;
+                    line-height: 1;
+                    &:hover{
+                        color: $primary-color;
+                    }
+                }
+                &:after{
+                    color: $default-color;
+                    content: '>';
+                    font-size: 16px;
+                    vertical-align: middle;
+                    padding: 0 10px;
+                    font-weight: 400;
+                }
+                &:last-child{
+                    &:after{
+                        display: none;
+                    }
+                }
+            }
+        }
+    }
+    @include breakpoint(max-sm_device){
+        padding: 50px 0px;
+    }
+}

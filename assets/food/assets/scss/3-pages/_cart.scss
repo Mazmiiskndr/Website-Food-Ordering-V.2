@@ -1,0 +1,146 @@
+/*----------------------------------------*/
+/*    12 - Pages - Cart
+/*----------------------------------------*/
+/*--------- Cart Page Wrapper Start ---------*/
+.cart-table{
+    .table {
+        margin: 0;
+        white-space: nowrap;
+        thead {
+            tr{
+                th {
+                    border-color: $border-color-3;
+                    border-bottom: 0 solid transparent;
+                    color: $default-color;
+                    font-size: 15px;
+                    font-weight: 700;
+                    padding: 15px 20px;
+                    text-align: center;
+                }
+            }
+        }
+        tr{
+            border-color: $border-color-3;
+            .pro-thumbnail, .pro-price, .pro-quantity, .pro-subtotal, .pro-remove{
+                width: 177px;
+                text-align: center;
+                align-items: center;
+            }
+        }
+        tbody{
+            td {
+                border-color: #ccc;
+                text-align: center;
+                padding: 10px 20px;
+                vertical-align: middle;
+                font-weight: 600;
+                color: #333333;
+                a {
+                    color: #333333;
+                    font-weight: 500;
+                    text-transform: capitalize;
+                    &:hover{
+                        color: $primary-color;
+                    }
+                    &.btn{
+                        color: $white-color;
+                    }
+                    &.check-btn{
+                        color: $white-color;
+                    }
+                }
+                &.pro-remove{
+                    a{
+                        i{
+                            font-size: 24px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+.cart-update-option {
+	border: 1px solid #ccc;
+	margin-top: 15px;
+	padding: 15px 20px;;
+	align-items: center;
+    justify-content: space-between;
+    @include breakpoint(max-xl_device){
+		margin-top: 0;
+		border-top: 0 solid transparent;
+    }
+    @include breakpoint(max-lg_device){
+        margin-top: 0;
+		border-top: 0 solid transparent;
+    }
+    .apply-coupon-wrapper {
+        width: 55%;
+        @include breakpoint(max-md_device){
+            width: auto;
+        }
+        form {
+            align-items: center;
+            justify-content: center;
+            white-space: nowrap;
+            input {
+                border: 1px solid #ccc;
+                font-size: 14px;
+                padding: 12px 10px;
+                outline: none;
+                margin-right: 15px;
+                width: 100%;
+                transition: 0.4s;
+                &:focus, &:active{
+                    border-color: $primary-color;
+                }
+            }
+        }
+        button{
+            @include breakpoint(max-sm_device){
+                display: block;
+                width: 100%;
+                margin-top: 15px;
+                border-radius: 0;
+                margin-bottom: 30px;
+            }
+        }
+    }
+}
+
+.cart-calculator-wrapper {
+	margin-top: 30px;
+    background-color: #f8f8f8;
+    h3 {
+        color: #333333;
+        font-size: 18px;
+        font-weight: 500;
+        padding: 27px 15px 25px;
+        margin-bottom: 0;
+    }
+    a {
+        border-radius: 0;
+        text-align: center;
+    }
+    .cart-calculate-items {
+        font-weight: 500;
+        .table {
+            margin-bottom: 0;
+            tr{
+                td {
+                    color: #333333;
+                    padding: 15px 20px;
+                    &:nth-child(2){
+                        color: #333333;
+                        text-align: right;
+                    }
+                    &.total-amount {
+                        color: #62d2a2;
+                        font-weight: 700;
+                    }
+                }
+            }
+        }
+    }
+}
+/*--------- Cart Page Wrapper end ---------*/

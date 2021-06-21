@@ -1,0 +1,104 @@
+/*----------------------------------------*/
+/*    20 - Components - Feature
+/*----------------------------------------*/
+.home-1{
+    .feature-area{
+        margin: 80px 0px 74px 0;
+        @include breakpoint(max-md_device){
+            margin-top: 71px;
+        }
+        @include breakpoint(max-xs_device){
+            margin-top: 74px;
+        }
+        @include breakpoint(max-xxs_device){
+            margin: 54px 0 60px 0;
+        }
+    }
+}
+.feature-area{
+    .feature-content-wrapper{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        height: 100%;
+        @include breakpoint(max-md_device){
+            padding-bottom: 40px;
+        }
+        .title{
+            margin-bottom: 20px;
+        }
+        .desc-content{
+            margin-bottom: 15px;
+            &:last-child{
+                margin-bottom: 0px;
+            }
+        }
+    }
+    .feature-content-countdown{
+        margin-top: -7px;
+        padding-left: 130px;
+        @include breakpoint(max-lg_device){
+            padding-left: 0px;
+        }
+        .title{
+            font-size: 26px;
+            font-weight: 700;
+            margin-bottom: 20px;
+        }
+        .price-box{
+            margin-bottom: 20px;
+            .regular-price{
+                font-size: 20px;
+                margin-right: 10px;
+            }
+        }
+        .desc-content{
+            margin-bottom: 20px;
+        }
+        .obrien-button-2{
+            margin-top: 20px;
+        }
+        @include breakpoint(max-sm_device){
+            margin-bottom: 40px;
+        }
+    }
+    .feature-image{
+        .popup-video{
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            .popup-vimeo{
+                height: 60px;
+                width: 60px;
+                line-height: 60px;
+                font-size: 18px;
+                color: $white-color;
+                background-color: $primary-color;
+                border-radius: 50%;
+                align-items:center;
+                text-align: center;
+                display: flex;
+                justify-content: center;
+                &:hover{
+                    color: $primary-color;
+                    background-color: $default-color;
+                }
+                @include breakpoint(max-xxs_device){
+                    height: 50px;
+                    width: 50px;
+                    line-height: 50px;
+                }
+                i{
+                    vertical-align: middle;
+                }
+            }
+        }
+    }
+    &.feature-area-boxed-home{
+        background-color: $white-smoke-color-2;
+        padding: 80px 0;
+        @include breakpoint(max-md_device){
+            padding: 60px 0;
+        }
+    }
+}

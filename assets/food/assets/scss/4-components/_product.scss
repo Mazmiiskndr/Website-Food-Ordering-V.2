@@ -1,0 +1,136 @@
+/*----------------------------------------*/
+/*    21 - Components - Product
+/*----------------------------------------*/
+.product-area{
+    .section-content{
+        .title-1{
+            padding-bottom: 19px;
+            @include breakpoint(max-xxs_device){
+                padding-bottom: 14px;
+            }
+        }
+        .desc-content{
+            padding-bottom: 60px;
+            @include breakpoint(max-xxs_device){
+                padding-bottom: 40px;
+            }
+        }
+    }
+    .single-product{
+        transition: .4s;
+        .product-image{
+            .product-image-2{
+                opacity: 0;
+                visibility: hidden;
+                top: 0;
+                left: 0;
+                transition: .4s;
+            }
+        }
+        .label-product{
+            .label-sale{
+                top: 30px;
+                left: 30px;
+                background: $default-color;
+                font-family: $body-font-family-name;
+                font-weight: 500;
+                font-size: 12px;
+                height: 20px;
+                line-height: 20px;
+                width: 70px;
+                padding: 0 6px;
+            }
+        }
+        .product-content{
+            background-color: $white-smoke-color-2;
+            padding: 0 30px 20px;
+            .product-rating{
+                padding-top: 15px;
+                padding-bottom: 6px;
+                i{
+                    color: $primary-color;
+                }
+            }
+            .product-title{
+                margin-bottom: 10px;
+            }
+            .price-box{
+                opacity: 1;
+                visibility: visible;
+                transition-delay: 700ms;
+                .regular-price{
+                    font-weight: 600;
+                }
+                .old-price{
+                    margin-left: 5px;
+                    color: $chyan-color;
+                }
+            }
+        }
+        .add-action{
+            position: absolute;
+            bottom: 14px;
+            left: 0;
+            padding: 0 30px;
+            a{
+                visibility: hidden;
+                opacity: 0;
+                transition: 0.3s;
+                transform: translateX(-20px);
+                font-size: 22px;
+                font-family: $body-font-family-name;
+                margin-right: 15px;
+                &:last-child{
+                    margin-right: 0px;
+                }
+                &:hover{
+                    color: $primary-color;
+                    transform: rotate(380deg);
+                    transition: .2s;
+                }
+            }
+        }
+        &:hover{
+            box-shadow: 0 5px 11px rgba(0, 0, 0, 0.14);
+            transition: .4s;
+            .product-image{
+                .product-image-2{
+                    visibility: visible;
+                    opacity: 1;
+                    transition: .4s;
+                }
+            }
+            .product-content{
+                .price-box{
+                    opacity: 0;
+                    visibility: hidden;
+                    transition: .2s;
+                }
+            }
+            .add-action{
+                a{
+                    transform: translateX(0);
+                    opacity: 1;
+                    visibility: visible;
+                    &:nth-child(2){
+                        transition-delay: 300ms;
+                    }
+                    &:nth-child(3){
+                        transition-delay: 500ms;
+                    }
+                    &:nth-child(4){
+                        transition-delay: 700ms;
+                    }
+                }
+            }
+        }
+    }
+    .product-wrapper{
+        .single-item{
+            padding: 0 15px;
+        }
+        .slick-list{
+            margin: 0 -15px;
+        }
+    }
+}

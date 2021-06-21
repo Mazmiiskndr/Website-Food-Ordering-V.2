@@ -1,0 +1,55 @@
+/*----------------------------------------*/
+/*    24 - Components - Support
+/*----------------------------------------*/
+.home-1{
+    .support-area{
+        margin-top: 75px;
+        @include breakpoint(max-xxs_device){
+            margin-top: 56px;
+        }
+    }
+}
+.home-4{
+    .support-area{
+        .support-wrapper{
+            @include breakpoint(max-xs_device){
+                flex-direction: column;
+                text-align: center;
+            }
+            .support-content{
+                @include breakpoint(max-xs_device){
+                    margin-bottom: 20px;
+                }
+            }
+            .support-button{
+                @include breakpoint(max-xs_device){
+                    justify-content: center;
+                }
+            }
+        }
+    }
+}
+.support-area{
+    background-color: $white-smoke-color;
+    padding: 50px 0 45px;
+    .support-wrapper{
+        justify-content: space-between;
+        @include breakpoint(max-xxs_device){
+            flex-direction: column;
+            text-align: center;
+        }
+        .support-content{
+            @include breakpoint(max-xxs_device){
+                margin-bottom: 20px;
+            }
+            .title{
+                margin-bottom: 10px;
+            }
+        }
+        .support-button{
+            @include breakpoint(max-xxs_device){
+                justify-content: center;
+            }
+        }
+    }
+}

@@ -1,0 +1,105 @@
+/*----------------------------------------*/
+/*    15 - Pages - FAQ
+/*----------------------------------------*/
+/* faq page css here */
+.faq_content_area {
+    padding: 68px 0 65px;
+    @include breakpoint(max-md_device){
+        padding: 53px 0 53px;
+    }
+}
+.accordion_area {
+	padding-bottom: 70px;
+    @include breakpoint(max-md_device){
+        padding-bottom: 60px;
+    }
+    & .card-header{
+        background:  $primary-color;
+        &:first-child{
+            border-radius: inherit;
+        }
+    }
+}
+.card.card_dipult {
+	border: none;
+    margin-bottom: 10px;
+    .card-body{
+        p{
+            @include breakpoint(max-xxs_device){
+                font-size: 12px;
+            }
+        }
+    }
+}
+.card.card_dipult:last-child {
+	margin-bottom: 0;
+}
+.card-header.card_accor  {
+    padding: 0;
+	border: none;
+    & button{
+        height: 45px;
+        text-decoration: none;
+        cursor: pointer;
+        position: relative;
+        white-space: initial;
+        @include breakpoint(max-md_device){
+            height: 60px;
+        }
+        &:focus{
+            box-shadow: none;
+        }
+        & i{
+            position: absolute;
+            top: 50%;
+            -webkit-transform: translatey(-50%);
+            transform: translatey(-50%);
+            right: 20px;
+            @include breakpoint(max-md_device){
+                right: 10px;
+            }
+        }
+        &.btn-link{
+            border: 1px solid  $primary-color;
+            width: 100%;
+            text-align: left;
+            font-size: 14px;
+            font-weight: 500;
+            color: $white-color;
+            padding-left: 20px;
+            @include breakpoint(max-md_device){
+                padding: 10px 28px 10px 10px;
+                font-size: 13px;
+            }
+            &.collapsed{
+                background: $white-smoke-color;
+                border: 1px solid  $white-smoke-color;
+                width: 100%;
+                text-align: left;
+                color: $default-color;
+            }
+        }
+    }
+}
+.card-header.card_accor button.btn-link i.fa-plus {
+	display: none;
+}
+.card-header.card_accor button.btn-link.collapsed i.fa-plus {
+	display: block;
+}
+.card-header.card_accor button.btn-link.collapsed i.fa-minus {
+	display: none;
+}
+.faq_content_wrapper{
+    & h4{
+        font-size: 18px;
+        font-weight: 600;
+        margin-bottom: 15px;
+        line-height: 18px;
+        @include breakpoint(max-md_device){
+            font-size: 14px;
+            line-height: 24px;
+        }
+    }
+}
+/*faq page css end*/

@@ -1,0 +1,399 @@
+/*----------------------------------------*/
+/*    07 - Pages - Shop
+/*----------------------------------------*/
+/*-- Shop Sidebar Area Start --*/
+.shop-main-area, .blog-main-area{
+    .sidebar_widget{
+        .widget_inner{
+            .widget-title{
+                font-weight: 500;
+                font-size: 22px;
+                line-height: 1;
+                position: relative;
+                padding-bottom: 12px;
+                margin-bottom: 30px;
+                &:after{
+                    background-color: $border-color-3;
+                    position: absolute;
+                    content: "";
+                    left: 0;
+                    bottom: 0;
+                    height: 1px;
+                    width: 60%;
+                }
+            }
+            .search-box{
+                .input-group{
+                    .form-control{
+                        border: 1px solid #e1e1e1;
+                        padding: 13px 10px 15px 13px;
+                        transition: .2s;
+                        outline-offset: -2px;
+                        display: block;
+                        &:focus{
+                            border-color: $primary-color;
+                            box-shadow: none;
+                        }
+                    }
+                    .btn-outline-secondary{
+                        background-color: $default-color;
+                        border-radius: 0 5px 5px 0;
+                        color: $white-color;
+                        height: 100%;
+                        width: 50px;
+                        &:hover{
+                            color: $primary-color;
+                        }
+                        &:focus{
+                            box-shadow: none;
+                        }
+                    }
+                }
+            }
+            .widget-list{
+                .mobile-menu{
+                    overflow: inherit;
+                    margin-top: -15px;
+                    > li{
+                        > a{
+                            font-weight: 500;
+                            display: block;
+                            &:hover{
+                                color: $primary-color;
+                            }
+                        }
+                        &:last-child{
+                            > a{
+                                padding-bottom: 0;
+                            }
+                        }
+                    }
+                }
+                .sidebar-body{
+                    .tags{
+                        li{
+                            display: inline-block;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+.sidebar-list{
+    > li{
+        >a{
+            font-size: 15px;
+            color: #252525;
+            text-transform: capitalize;
+            line-height: 18px;
+            position: relative;
+            display: block;
+            padding: 10px 0;
+            font-weight: 500;
+            &:hover{
+                color: $primary-color;
+            }
+        }
+        &:last-child{
+            a{
+                padding-bottom: 0;
+            }
+        }
+    }
+    .btn{
+        height: 20px;
+        max-width: 90px;
+        min-width: 30px;
+        position: relative;
+        border: 1px solid $border-color;
+        display: inline-block;
+        margin: 0 20px 20px 0;
+        border-radius: 20px;
+    }
+}
+.tags li a {
+    border: 1px solid #e1e1e1;
+    line-height: 1em;
+    padding: 10px 15px;
+    display: inline-block;
+    margin-right: 5px;
+    margin-bottom: 10px;
+    color: #1b1b1c;
+    border-radius: 25px;
+    font-weight: 500;
+    &:hover{
+        color: $primary-color;
+        border-color: $primary-color;
+    }
+}
+.sidebar-product {
+    width: 100%;
+    overflow: hidden;
+    margin-bottom: 15px;
+    display: flex;
+    &:last-child{
+        margin-bottom: 0;
+    }
+    .image{
+        width: 80px;
+        flex-basis: 80px;
+        background-color: #d8d8d8;
+        margin-right: 15px;
+        img{
+            width: 100%;
+        }
+    }
+    .product-content {
+        width: calc(100% - 80px);
+        flex-basis: calc(100% - 80px);
+        font-size: 13px;
+        .title-2 {
+            color: #1b1b1c;
+            font-size: 14px;
+            font-weight: 600;
+            display: inline-block;
+            margin-bottom: 3px;
+            font-family: $body-font-family-name;
+            &:hover {
+                color: $primary-color;
+            }
+        }
+        .price-box {
+            font-size: 14px;
+            display: block;
+            .old-price {
+                margin-left: 10px;
+                color: #a8a8a8;
+                text-decoration: line-through;
+            }
+        }
+        .product-rating {
+            display: block;
+            i {
+                font-size: 12px;
+                color: $primary-color;
+            }
+        }
+    }
+}
+.widget-mb-1{
+    margin-bottom: 57px;
+}
+.widget-mb-2{
+    margin-bottom: 37px;
+}
+.widget-mb-3{
+    margin-bottom: 46px;
+}
+.widget-mb-4{
+    margin-bottom: 80px;
+}
+.widget-mt{
+    margin-top: 77px;
+    @include breakpoint(max-xs_device){
+        margin-top: 80px;
+    }
+    @include breakpoint(max-xxs_device){
+        margin-top: 80px;
+    }
+}
+/*-- Shop Sidebar Area End --*/
+/*-- Shop Toolbar Area Start Here --*/
+.shop_toolbar_wrapper{
+    padding: 15px 30px;
+    border: 1px solid #d8d8d8;
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    @include breakpoint(max-xxs_device){
+        flex-direction: column;
+        justify-content: center;
+    }
+    .shop-select{
+        @include breakpoint(max-xxs_device){
+            width: 100%;
+        }
+        .form-control{
+            display: flex;
+            align-items: center;
+            border-radius: 5px;
+            position: relative;
+            &:focus{
+                border: 2px solid $default-color;
+                color: $default-color;
+                box-shadow: none;
+            }
+            .list{
+                width: 100%;
+                .option{
+                    padding: 0 5px;
+                }
+            }
+        }
+    }
+    .shop_toolbar_btn{
+        @include breakpoint(max-xxs_device){
+            margin-bottom: 20px;
+        }
+        button{
+            &.active{
+                border: 1px solid $default-color;
+            }
+            border: 1px solid transparent;
+            font-size: 20px;
+            text-transform: uppercase;
+            margin-right: 20px;
+            line-height: 1;
+            cursor: pointer;
+            transition: 0.4s;
+            padding: 6px 5px 4px;
+            background-color: transparent;
+            &:last-child{
+                margin-right: 0px;
+            }
+        }
+    }
+}
+.toolbar-bottom{
+    border: 1px solid #e1e1e1;
+    padding: 15px 30px;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 80px;
+    @include breakpoint(max-md_device){
+        margin-bottom: 0px;
+    }
+    @include breakpoint(max-xxs_device){
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}
+.shop-fullwidth{
+    .toolbar-bottom{
+        margin-bottom: 80px;
+        @include breakpoint(max-md_device){
+            margin-bottom: 80px;
+        }
+    }
+}
+/*-- Shop Toolbar Area End Here --*/
+/*-- Shop Product Wrapper Start --*/
+.shop_wrapper{
+    &.grid_list{
+        .single-product{
+            display: flex;
+            background-color: $white-smoke-color-2;
+            align-items: center;
+            position: relative;
+            margin-top: 30px;
+            min-height: auto;
+            padding: 20px 0;
+            @include breakpoint(max-sm_device){
+                flex-direction: column;
+                padding-top: 0px;
+            }
+            .product-image{
+                flex-basis: 35%;
+                max-width: 35%;
+                position: relative;
+                display: block;
+                overflow: hidden;
+                margin: 20px 40px;
+                @include breakpoint(max-lg_device){
+                    margin: 20px;
+                }
+                @include breakpoint(max-sm_device){
+                    flex-basis: 100%;
+                    max-width: 100%;
+                }
+            }
+            .product-content-listview{
+                flex-basis: 65%;
+                max-width: 65%;
+                padding: 0 30px 0px;
+                position: relative;
+                margin-bottom: 0;
+                @include breakpoint(max-lg_device){
+                    padding: 0 15px 0;
+                }
+                @include breakpoint(max-sm_device){
+                    flex-basis: 100%;
+                    max-width: 100%;
+                    padding: 0 20px;
+                }
+                .product-rating{
+                    margin-bottom: 15px;
+                    i{
+                        font-size: 18px;
+                        margin-right: 1px;
+                        color: $primary-color;
+                    }
+                }
+                .product-title{
+                    .title-2{
+                        font-size: 20px;
+                        font-weight: 500;
+                        text-transform: uppercase;
+                        margin-bottom: 15px;
+                    }
+                }
+                .price-box{
+                    display: flex;
+                    align-items: center;
+                    .regular-price{
+                        color: $default-color;
+                        font-weight: 600;
+                        margin-right: 5px;
+                    }
+                    .old-price{
+                        color: $chyan-color;
+                        font-size: 12px;
+                    }
+                }
+                .add-action-listview{
+                    margin-top: 15px;
+                    a{
+                        font-size: 22px;
+                        line-height: 1;
+                        color: $theme-color--default;
+                        margin-right: 15px;
+                        &:hover{
+                            color: $primary-color;
+                        }
+                    }
+                }
+                .desc-content{
+                    border-top: 1px solid #e1e1e1;
+                    margin-top: 25px;
+                    padding-top: 25px;
+                    display: block;
+                }
+            }
+        }
+        .product-content{
+            display: none;
+        }
+        .add-action{
+            display: none !important;
+        }
+        .product-content-listview{
+            display: block;
+        }
+    }
+    .product-content-listview{
+        display: none;
+    }
+    &.grid_3{
+        .single-product{
+            margin-top: 30px;
+        }
+    }
+    &.grid_4{
+        .single-product{
+            margin-top: 30px;
+        }
+    }
+}
+/*-- Shop Product Wrapper End --*/

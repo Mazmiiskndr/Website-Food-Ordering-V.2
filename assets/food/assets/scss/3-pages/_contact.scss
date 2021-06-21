@@ -1,0 +1,61 @@
+/*----------------------------------------*/
+/*    09 - Pages - Contact
+/*----------------------------------------*/
+.contact-us-area{
+    margin-top: 50px;
+    margin-bottom: 45px;
+    @include breakpoint(max-xxs_device){
+        margin-top: 30px;
+        margin-bottom: 25px;
+    }
+    .form-message{
+        overflow: hidden;
+        margin-left: 15px;
+        margin-right: 15px;
+        padding-bottom: 15px;
+        margin-top: 20px;
+        display: flex;
+        align-items: center;
+        button{
+            padding-right: 10px; 
+        }
+    }
+}
+.contact-info-item {
+    border: 1px solid $border-color;
+    text-align: center;
+    padding: 60px 20px;
+    margin-top: 30px;
+    .con-info-icon {
+        border: 1px solid $primary-color;
+        border-radius: 100px;
+        color: $primary-color;
+        font-size: 35px;
+        margin: 0 auto 20px;
+        transition: 0.4s;
+        line-height: 60px;
+        height: 60px;
+        width: 60px;
+    }
+    .con-info-txt{
+        h4 {
+            font-size: 18px;
+            margin-top: -2px;
+            margin-bottom: 15px;
+        }
+    }
+    &:hover {
+        .con-info-icon{
+            background-color: $primary-color;
+            color: $white-color;
+        }
+    }
+}
+
+.contact-form-content {
+    h2 {
+        font-size: 20px;
+        text-transform: uppercase;
+        margin-top: -3px;
+    }
+} 

@@ -1,0 +1,128 @@
+/*----------------------------------------*/
+/*    16 - Pages - My-Account
+/*----------------------------------------*/
+/*-------- Start My Account Page Wrapper --------*/
+.myaccount-tab-menu {
+    flex-direction: column;
+    a {
+        border: 1px solid $border-color;
+        border-bottom: none;
+        color: $default-color;
+        font-weight: 500;
+        font-size: 15px;
+        display: block;
+        padding: 10px 15px;
+        text-transform: uppercase;
+        &:last-child{
+            border-bottom: 1px solid $border-color;
+        }
+        &:hover, &.active{
+            background-color: $primary-color;
+            border-color: $primary-color;
+            color: $white-color;
+        }
+        i{
+            font-size: 14px;
+            text-align: center;
+            width: 25px;
+        }
+    }
+    
+}
+@include breakpoint(max-sm_device){
+	#myaccountContent {
+		margin-top: 30px;
+	}
+}
+.myaccount-content {
+	border: 1px solid $border-color-2;
+    padding: 30px;
+    @include breakpoint(max-xs_device){
+        padding: 20px 15px;
+    }
+    form {
+        margin-top: -20px;
+        .single-input-item{
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            input{
+                width: 100%;
+                padding: 12px 10px;
+                border: 1px solid $border-color;
+                &:focus{
+                    border: 1px solid $primary-color;
+                }
+            }
+        }
+        .single-item-button{
+            width: 25%;
+            @include breakpoint(max-lg_device){
+                width: 30%;
+            }
+            @include breakpoint(max-md_device){
+                width: 45%;
+            }
+            @include breakpoint(max-sm_device){
+                width: 100%;
+            }
+        }
+    }
+    h3 {
+        font-size: 20px;
+        border-bottom: 1px dashed $border-color;
+        padding-bottom: 10px;
+        margin-bottom: 25px;
+        font-weight: 500;
+    }
+    .welcome{
+        a{
+            color: $default-color;
+            &:hover {
+                color: $primary-color;
+            }
+        }
+        strong {
+            font-weight: 600;
+            color: $primary-color;
+        }
+    }
+    fieldset {
+        margin-top: 20px;
+        legend {
+            color: $default-color;
+            font-size: 20px;
+            margin-top: 20px;
+            font-weight: 500;
+            border-bottom: 1px dashed $border-color;
+        }
+    }
+}
+.myaccount-table {
+	white-space: nowrap;
+    font-size: 14px;
+    table, .table{
+        th{
+            color: $default-color;
+            padding: 10px;
+            font-weight: 500;
+            background-color: $white-smoke-color;
+            border-color: $border-color;
+            border-bottom: 0;
+        }
+        td {
+            padding: 10px;
+            vertical-align: middle;
+            border-color: $border-color;
+        }
+    }
+}
+.saved-message {
+	background-color: $white-smoke-color;
+	border-top: 3px solid $primary-color;
+	border-radius: 5px 5px 0 0;
+	font-weight: 600;
+	font-size: 15px;
+	color: #666666;
+	padding: 20px;
+}
